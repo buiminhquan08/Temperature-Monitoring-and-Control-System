@@ -1,19 +1,20 @@
 MÔ TẢ HỆ THỐNG GIÁM SÁT VÀ ỔN ĐỊNH NHIỆT ĐỘ
 
-1. Mục đích:
+1. Mục đích
 
 -Hệ thống được thiết kế để liên tục theo dõi nhiệt độ của một đối tượng hoặc một vật thể. Mục tiêu chính là duy trì nhiệt độ của đối tượng không vượt quá một ngưỡng giới hạn đã được xác định trước, bằng cách tự động kích hoạt cơ chế quạt làm mát và đồng thời phát tín hiệu cảnh báo bằng buzzer khi nhiệt độ vượt ngưỡng.
 
-2. Nguyên lý hoạt động:
+2. Nguyên lý hoạt động
+
 -Đo lường liên tục: Cảm biến nhiệt độ được đặt gần hoặc tiếp xúc với đối tượng cần giám sát, liên tục đo đạc giá trị nhiệt độ hiện tại.
 
-Gửi dữ liệu: Dữ liệu nhiệt độ đo được sẽ được gửi về xử lí bởi vi điều khiển 
+-Gửi dữ liệu: Dữ liệu nhiệt độ đo được sẽ được gửi về xử lí bởi vi điều khiển 
 
-So sánh ngưỡng: Bộ vi điều khiển so sánh giá trị nhiệt độ thực tế (T_actual) với giá trị ngưỡng nhiệt độ an toàn đã được cài đặt trước (T_threshold).
+-So sánh ngưỡng: Bộ vi điều khiển so sánh giá trị nhiệt độ thực tế (T_actual) với giá trị ngưỡng nhiệt độ an toàn đã được cài đặt trước (T_threshold).
 
-Quyết định và Hành động:
+-Quyết định và Hành động:
 
-Nếu T_actual > T_threshold (Nhiệt độ vượt ngưỡng):
++Nếu T_actual > T_threshold (Nhiệt độ vượt ngưỡng):
 
 -Bộ vi điều khiển gửi tín hiệu kích hoạt relay điều khiển quạt
 
@@ -21,7 +22,7 @@ Nếu T_actual > T_threshold (Nhiệt độ vượt ngưỡng):
 
 -Đồng thời, bộ vi điều khiển gửi tín hiệu kích hoạt còi báo (buzzer), phát ra âm thanh để cảnh báo người dùng về tình trạng quá nhiệt.
 
-Nếu T_actual ≤ T_threshold (Nhiệt độ trong ngưỡng an toàn):
++Nếu T_actual ≤ T_threshold (Nhiệt độ trong ngưỡng an toàn):
 
 -Bộ vi điều khiển gửi tín hiệu ngắt (hoặc không kích hoạt) module điều khiển quạt.
 
@@ -31,9 +32,9 @@ Nếu T_actual ≤ T_threshold (Nhiệt độ trong ngưỡng an toàn):
 
 -Còi báo im lặng.
 
-Chu kỳ lặp lại: Quá trình đo lường, so sánh và điều khiển này được lặp đi lặp lại liên tục theo một chu kỳ thời gian ngắn, đảm bảo hệ thống phản ứng nhanh chóng với sự thay đổi nhiệt độ.
+-Chu kỳ lặp lại: Quá trình đo lường, so sánh và điều khiển này được lặp đi lặp lại liên tục theo một chu kỳ thời gian ngắn, đảm bảo hệ thống phản ứng nhanh chóng với sự thay đổi nhiệt độ.
 
-3. Thành phần chính:
+3. Thành phần chính
 -Cảm biến nhiệt độ: Thiết bị đo nhiệt độ (Thermistor NTC)
 
 -Bộ vi điều khiển / Mạch điều khiển: Trung tâm xử lý tín hiệu, so sánh và ra quyết định (PIC 16877A)
@@ -48,7 +49,7 @@ Chu kỳ lặp lại: Quá trình đo lường, so sánh và điều khiển nà
 
 -Nút nhấn (4 nút): Cài đặt nhiệt độ ngưỡng 
 
-4. Chức năng chính:
+4. Chức năng chính
 
 -Giám sát nhiệt độ thời gian thực.
 
@@ -62,7 +63,7 @@ Chu kỳ lặp lại: Quá trình đo lường, so sánh và điều khiển nà
 
 -Tự động tắt cảnh báo khi nhiệt độ trở về mức an toàn.
 
-5. Ứng dụng tiềm năng:
+5. Ứng dụng
 
 -Làm mát linh kiện điện tử công suất cao (CPU, GPU, bộ nguồn).
 
