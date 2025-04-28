@@ -18,14 +18,22 @@ Nếu T_actual ≤ T_threshold (Nhiệt độ trong ngưỡng an toàn):
 Chu kỳ lặp lại: Quá trình đo lường, so sánh và điều khiển này được lặp đi lặp lại liên tục theo một chu kỳ thời gian ngắn, đảm bảo hệ thống phản ứng nhanh chóng với sự thay đổi nhiệt độ.
 3. Thành phần chính:
 -Cảm biến nhiệt độ: Thiết bị đo nhiệt độ (Thermistor NTC)
+
 -Bộ vi điều khiển / Mạch điều khiển: Trung tâm xử lý tín hiệu, so sánh và ra quyết định (PIC 16877A)
+
 -Quạt làm mát: Thiết bị tạo luồng gió để tản nhiệt (quạt DC 12V)
+
 -Còi báo (Buzzer): Thiết bị phát ra âm thanh cảnh báo khi có tín hiệu kích hoạt.
+
 -Nguồn cấp: Sử dụng Adapter AC-DC 220V sang 5V để cấp nguồn cho mạch hoạt động
+
 -Màn hình hiển thị: Hiển thị giá trị nhiệt độ hiện tại và trạng thái hệ thống.
+
 -Nút nhấn (4 nút): Cài đặt nhiệt độ ngưỡng 
 4. Chức năng chính:
+
 -Giám sát nhiệt độ thời gian thực.
+
 -So sánh nhiệt độ đo được với ngưỡng cài đặt.
 -Tự động bật quạt làm mát khi nhiệt độ vượt ngưỡng.
 -Tự động tắt quạt khi nhiệt độ trở về mức an toàn.
